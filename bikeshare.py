@@ -37,6 +37,7 @@ def calculate_time_duration(time, message):
     Parameters:
         time in seconds (number): number of seconds.
         message (str): string to display during the printing.
+
     Returns:
         None
     """
@@ -102,6 +103,9 @@ def display_data(df):
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
+    
+    Parameters:
+            None
 
     Returns:
         (str) city - name of the city to analyze.
@@ -168,6 +172,7 @@ def load_data(city, month, day):
         (str) city - name of the city to analyze.
         (str) month - name of the month to filter by, or "all" to apply no month filter.
         (str) day - name of the day of week to filter by, or "all" to apply no day filter.
+
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day.
     """
