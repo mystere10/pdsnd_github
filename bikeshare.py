@@ -243,6 +243,10 @@ def load_data(city, month, day):
         df['hour'] = df[df['Start Time'].dt.strftime('%A') == day.title()]['Start Time'].dt.hour
 
 
+
+    
+    
+
     
     return df
 
@@ -266,7 +270,7 @@ def time_stats(df):
     # Display the most common start hour.
     if 'hour' in df.columns:
         common_hour = df['hour'].mode()[0]
-        print("The most common hour is", str(common_hour)+'H')
+        print("The most common hour is", str(int(common_hour)))
 
     get_time_elapsed(time.time(), start_time)
 
